@@ -1,0 +1,34 @@
+-- =========================================
+-- ACTIVIDAD BD1 - UNIDAD 3
+-- MOTOR: MySQL
+-- BASE DE DATOS: cea_examenes_academicos
+-- OPERACIONES: INSERT, UPDATE, DELETE Y BACKUP
+-- =========================================
+
+
+-- 1. OPERACIONES INSERT
+INSERT INTO TablaY
+(fecha, nombre, apellidos, asignatura, nota1, nota2, nota3, mensaje)
+VALUES
+('2026-11-15', 'Mariana', 'Gómez Pérez',
+'Bases de Datos 1', 4, 4, 5,
+'Registro de prueba para la actividad');
+
+INSERT INTO TablaY
+(fecha, nombre, apellidos, asignatura, nota1, nota2, nota3, mensaje)
+VALUES
+('2026-11-15', 'Daniel', 'Rodríguez López',
+ 'Desarrollo de Software', 3, 4, 5,
+ 'Segundo registro de prueba para la actividad');
+
+
+-- 2. OPERACIONES UPDATE
+-- Aquí documentaremos las actualizaciones realizadas.
+
+
+-- 3. OPERACIONES DELETE
+-- Aquí documentaremos las eliminaciones realizadas.
+
+
+-- 4. COPIA DE SEGURIDAD (BACKUP)
+-- Aquí documentaremos el procedimiento de respaldo.
