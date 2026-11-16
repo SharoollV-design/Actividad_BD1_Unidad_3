@@ -23,11 +23,17 @@ VALUES
 
 
 -- 2. OPERACIONES UPDATE
--- Aquí documentaremos las actualizaciones realizadas.
+UPDATE ALUMNO
+SET correo = 'valentina.vivas@uchile.cl'
+WHERE id_codigo = 'ALU101';
+
+UPDATE ALUMNO
+SET correo = 'camila.torres@uchile.cl'
+WHERE id_codigo = 'ALU102';
 
 
 -- 3. OPERACIONES DELETE
--- Aquí documentaremos las eliminaciones realizadas.
+
 
 
 -- 4. COPIA DE SEGURIDAD (BACKUP)
