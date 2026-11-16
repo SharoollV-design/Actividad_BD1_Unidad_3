@@ -1,0 +1,77 @@
+
+-- =========================================
+-- ACTIVIDAD BD1 - UNIDAD 3
+-- MOTOR: PostgreSQL
+-- BASE DE DATOS: 7502520017_16_examenes_academicos
+-- OPERACIONES: INSERT, UPDATE, DELETE Y BACKUP
+-- =========================================
+
+
+-- =========================================
+-- 1. OPERACIONES INSERT
+-- =========================================
+-- Se insertan dos registros de prueba en TablaY.
+
+INSERT INTO public."TablaY"
+(fecha, nombre, apellidos, asignatura, nota1, nota2, nota3, mensaje)
+VALUES
+('2026-11-15', 'Mariana', 'Gómez Pérez',
+'Bases de Datos 1', 4, 4, 5,
+'Registro de prueba para la actividad');
+
+INSERT INTO public."TablaY"
+(fecha, nombre, apellidos, asignatura, nota1, nota2, nota3, mensaje)
+VALUES
+('2026-11-15', 'Daniel', 'Rodríguez López',
+'Desarrollo de Software', 3, 4, 5,
+'Segundo registro de prueba para la actividad');
+
+
+-- =========================================
+-- 2. OPERACIONES UPDATE
+-- =========================================
+-- Se actualiza el mensaje del registro de Mariana.
+
+UPDATE public."TablaY"
+SET mensaje = 'Registro actualizado para la actividad'
+WHERE nombre = 'Mariana'
+AND apellidos = 'Gómez Pérez';
+
+-- Se actualiza el mensaje del registro de Daniel.
+
+UPDATE public."TablaY"
+SET mensaje = 'Segundo registro actualizado'
+WHERE nombre = 'Daniel'
+AND apellidos = 'Rodríguez López';
+
+
+-- =========================================
+-- 3. OPERACIONES DELETE
+-- =========================================
+-- Se elimina el registro de Mariana.
+
+DELETE FROM public."TablaY"
+WHERE nombre = 'Mariana'
+AND apellidos = 'Gómez Pérez';
+
+-- Se elimina el registro de Daniel.
+
+DELETE FROM public."TablaY"
+WHERE nombre = 'Daniel'
+AND apellidos = 'Rodríguez López';
+
+
+-- =========================================
+-- 4. CONSULTA DE VERIFICACIÓN
+-- =========================================
+-- Se consulta la información restante de la tabla.
+
+SELECT * FROM public."TablaY";
+
+
+-- =========================================
+-- 5. COPIA DE SEGURIDAD (BACKUP)
+-- =========================================
+-- El respaldo se realiza desde pgAdmin 4.
+-- Se selecciona la base de datos, se elige
+-- la opción Backup y se configura el archivo.
