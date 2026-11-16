@@ -14,13 +14,6 @@ VALUES
 'Bases de Datos 1', 4, 4, 5,
 'Registro de prueba para la actividad');
 
-INSERT INTO TablaY
-(fecha, nombre, apellidos, asignatura, nota1, nota2, nota3, mensaje)
-VALUES
-('2026-11-15', 'Daniel', 'Rodríguez López',
- 'Desarrollo de Software', 3, 4, 5,
- 'Segundo registro de prueba para la actividad');
-
 
 -- 2. OPERACIONES UPDATE
 UPDATE ALUMNO
@@ -33,8 +26,15 @@ WHERE id_codigo = 'ALU102';
 
 
 -- 3. OPERACIONES DELETE
+DELETE FROM TablaY
+WHERE nombre = 'Valentina'
+AND apellidos = 'Vivas Lopez';
 
 
+-- 4. CONSULTA DE VERIFICACIÓN
+SELECT * FROM TablaY;
 
--- 4. COPIA DE SEGURIDAD (BACKUP)
--- Aquí documentaremos el procedimiento de respaldo.
+-- 5. COPIA DE SEGURIDAD (BACKUP)
+-- El respaldo se realiza desde MySQL Workbench.
+-- Se selecciona la base de datos y se utiliza
+-- la opción Data Export para generar el archivo.
